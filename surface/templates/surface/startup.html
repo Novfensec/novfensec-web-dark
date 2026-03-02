@@ -1,0 +1,103 @@
+{% extends 'surface/surface.html' %}
+{% block home %}current{% endblock home %}
+{% block title %}Novfensec Inc.{% endblock title %}
+{% block desc %}{% endblock desc %}
+{% block tags %}{% endblock tags %}
+{% block content %}
+{% load static %}
+<div class="container mt-4">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner shadow-lg rounded">
+            <div class="carousel-item active" data-bs-interval="6000">
+                <img src="{% static 'surface/img/surfaceA.jpg' %}" class="d-block w-100" alt="nfs">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Hello,Myself Kartavya Shukla!</h2>
+                    <p>Web Developer, App Developer , Data Scientist</p>
+                    <a class="btn btn-outline-success current" href="#Novfensec">App
+                        Development</a>
+                    <a class="btn btn-outline-success current" href="#Novfensec">Web
+                        Development</a>
+                    <a class="btn btn-outline-success current" href="#Novfensec">Data
+                        Science</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <img src="{% static 'surface/img/surfaceC.jpg' %}" class="d-block w-100" alt="nfs">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <img src="{% static 'surface/img/surfaceB.jpg' %}" class="d-block w-100" alt="nfs">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="hover-box p-4 rounded shadow-lg">
+        <h1 class="display-4 py-1 text-cg">Welcome to Novfensec!</h1>
+        <p class="lead text-light">Want to learn How to Code like a Professional? Learn to Code like a Pro with Me!</p>
+        <hr class="my-4">
+        <p class="lead text-light">Myself Kartavya Shukla will help you to chose your programming merit!<br>Learn from
+            Me on my
+            YouTube
+            Channel.</p>
+        <a class="btn btn-outline-success current" href="/channel/" role="button">Visit Now</a>
+    </div>
+    <div class="row p-5">
+        <div class="col">
+            <div class="card hover-box text-cg shadow-lg" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-box text-cg shadow-lg" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-box text-cg shadow-lg" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

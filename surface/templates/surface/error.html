@@ -1,0 +1,10 @@
+{% extends 'surface/surface.html' %}
+{% block title %}Novfensec-Error{% endblock title %}
+{% block content %}
+<br>
+<div class="container mx-auto my-4 hover-box text-center py-5 shadow-lg">
+    <h1 class="display-1 pb-3 text-cg">Error <b>{{error}}</b></h1>
+    <p class="lead py-1 text-light">Please Try Different Urls!</p>
+    <p class="py-1 text-light">Go Back to <a href="{% url 'home' %}" class="text-cg">Home</a></p>
+</div>
+{% endblock content %}

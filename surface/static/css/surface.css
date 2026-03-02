@@ -1,0 +1,94 @@
+:root{
+    --dark:#15202b;
+    --dark-dim:#22303c;
+    --success:#0a3255;
+    --chrome-green:#17cc44;
+    --light:aliceblue;
+	--hover-light:#192734;
+    --surface:#235683;
+}
+.text-surface{
+    color:var(--surface);
+}
+.stroke-1{
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.search-box input,.form-control{
+    background-color: transparent;
+    border:none;
+    border-radius:0px;
+    border-bottom:0.1em solid #17cc44;
+    color: aliceblue;
+    padding-left: .3rem;
+    padding-right:.3rem;
+}
+.search-box input:focus,.form-control:focus{
+    outline:none;
+    box-shadow:none;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: var(--chrome-green);
+}
+.search-box:hover input,.form-control:hover{
+    padding-left:.5rem;
+    padding-right:1rem;
+    transition: .7s;
+}
+.search-button,.card{
+	background-color:transparent;
+    border:none;
+}
+body{
+    background-color: var(--dark);
+    /* background-color: #15202b; */
+}
+.navbar-dark{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2317cc44' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+a{
+    text-decoration: none;
+}
+.navbar,.footer{
+    background-color: var(--dark);
+    color: light;
+    /* background-color: #192734; */
+}
+.current,.dropdown-item,.dropdown-menu{
+	background-color: var(--success);
+    color:var(--chrome-green);
+    border: none;
+}
+hr {
+    border-color: aliceblue;
+}
+.btn-outline-success{
+    border: none;
+    --bs-btn-active-bg: var(--success);
+    --bs-btn-color: var(--chrome-green);
+    --bs-btn-hover-color:var(--bs-btn-color);
+    --bs-btn-hover-bg:var(--bs-btn-active-bg);
+    --bs-btn-active-color:var(--dark);
+	margin-left:1px;
+	margin-right:1px;
+    transition: .3s;
+}
+.border-ext{
+    border: .1px solid var(--chrome-green);
+}
+.text-cg{
+    color:var(--chrome-green);
+}
+.hover-box{
+	border-radius:.375rem;
+}
+.hover-box:hover{
+	background-color: var(--hover-light);
+	transition:.3s;
+}
+.dropdown-menu .hover-box{
+    color:var(--chrome-green);
+}
+.container-mid{
+    width: 35rem;
+}

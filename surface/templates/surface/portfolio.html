@@ -1,0 +1,90 @@
+{% extends 'surface/surface.html' %}
+{% block portfolio %}current{% endblock portfolio %}
+{% block title %}Portfolio{% endblock title %}
+{% block head %}
+{% load static %}
+<style>
+    .hero-image {
+        background-image: linear-gradient(rgba(142, 136, 136, 0.1), rgb(0, 0, 0)),
+        url("{% static 'surface/img/5.jpg' %}");
+        height: 23rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+</style>
+{% endblock head %}
+{% block external %}
+{% load static %}
+<div class="hero-image">
+    <div class="hero-text">
+        <span class="display-4"><i>Welcome to NOVFENSEC</i></span>
+    </div>
+</div>
+{% endblock external %}
+{% block content %}
+<div class="container hover-box text-white rounded p-4">
+    <h1 class="display-4 p-3 text-cg">Follow Me on my Social Media Platforms!</h1>
+    <p class="lead">Below are the links for All the project Repositories on My GitHub and Codepen profiles!</p>
+    <hr class="my-4">
+    <p class="lead">Get all the tutorials and Learn from Me on my YouTube
+        Channel.</p>
+    <a class="btn btn-outline-success current btn-lg" href="{% url 'channel' %}" role="button">Subscribe Now!</a>
+</div>
+<br>
+<div class="container-md text-cg p-3">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card hover-box">
+                <img src="{% static 'surface/images/GitHub.png' %}" class="card-img-top" alt="Novfensec-Github">
+                <div class="card-body">
+                    <h5 class="card-title">Follow Me On GitHub</h5>
+                    <p class="card-text">Get all the Source Codes in my Github profile.</p>
+                    <a href="{% url 'github' %}" class="btn btn-outline-success current stretched-link">MY Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-box">
+                <img src="{% static 'surface/images/code.png' %}" class="card-img-top" alt="Novfensec-Codepen">
+                <div class="card-body">
+                    <h5 class="card-title">Follow Me On Codepen</h5>
+                    <p class="card-text">Get all the Html,Css,Js Source Codes in my Codepen profile.</p>
+                    <a href="{% url 'codepen' %}" class="btn btn-outline-success current stretched-link">MY Codepen</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-box">
+                <img src="{% static 'surface/images/YouTube.jpg' %}" class="card-img-top" alt="Novfensec-YouTube">
+                <div class="card-body">
+                    <h5 class="card-title">Follow Me On YouTube</h5>
+                    <p class="card-text">Get all the tutorials on my Youtube Channel.</p>
+                    <a href="{% url 'channel' %}" class="btn btn-outline-success current stretched-link">MY Channel</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card hover-box">
+                <img src="{% static 'surface/images/StackOverflow.jpg' %}" class="card-img-top"
+                    alt="Novfensec-StackOverflow">
+                <div class="card-body">
+                    <h5 class="card-title">Follow Me On Stack Overflow</h5>
+                    <p class="card-text">Get solutions to some questions answered by me.</p>
+                    <a href="{% url 'stackoverflow' %}" class="btn btn-outline-success current stretched-link">MY StackOverflow</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

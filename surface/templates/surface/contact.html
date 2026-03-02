@@ -1,0 +1,47 @@
+{% extends 'surface/surface.html' %}
+{% block contact %}current{% endblock contact %}
+{% block title %}Contact{% endblock title %}
+{% if user.is_authenticated %}
+{% block js %}
+<script>
+    document.querySelector('#name').value = "{{request.user}}";
+</script>
+{% endblock js %}
+{% endif %}
+{% block content %}
+<div class="container hover-box text-cg p-4 rounded shadow-lg">
+    <h1 class="text-surface">Contact Us</h1>
+    <form action="/contact/" method="post">
+        {% csrf_token %}
+        <div class="form-group py-1">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-group py-1">
+            <label for="name">Email</label>
+            <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-group py-1">
+            <label for="name">Phone</label>
+            <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number"
+                required>
+        </div>
+        <div class="form-group py-1">
+            <label for="desc">How May I Help You?</label>
+            <textarea class="form-control" id="message" name='message' rows="3" required>Ask A Question:</textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-success current">Submit</button>
+    </form>
+</div><br>
+<div class="container hover-box shadow-lg">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-surface">Email At</h1>
+            <p class="card-text text-cg"><a class="text-cg" rel="noopener" target="_blank"
+                    href="mailto:novfensec@protonmail.com">novfensec@protonmail.com</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
