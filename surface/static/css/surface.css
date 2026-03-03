@@ -54,6 +54,11 @@ a{
     color: light;
     /* background-color: #192734; */
 }
+
+.navbar-nav .nav-item {
+    margin-bottom: 1rem;
+}
+
 .current,.dropdown-item,.dropdown-menu{
 	background-color: var(--success);
     color:var(--chrome-green);
